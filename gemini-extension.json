@@ -1,0 +1,15 @@
+{
+  "name": "bigquery-remote-mcp",
+  "version": "1.0.0",
+  "description": "Interact with the Google BigQuery API using natural language commands",
+  "mcpServers": {
+    "bigquery": {
+      "httpUrl": "https://bigquery.googleapis.com/mcp",
+      "authProviderType": "google_credentials",
+      "oauth": {
+        "scopes": ["https://www.googleapis.com/auth/bigquery"]
+      },
+      "timeout": 30000
+    }
+  }
+}
