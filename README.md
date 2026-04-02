@@ -15,7 +15,7 @@ Google and Google Cloud remote MCP servers can be used in your AI applications w
    > **Note**: If you don't plan to keep the resources that you create in this procedure, create a project instead of selecting an existing project. After you finish these steps, you can delete the project, removing all resources associated with the project.  
 
 2. Get your administrator to grant you the [MCP Tool User role](https://docs.cloud.google.com/iam/docs/roles-permissions/mcp#mcp.toolUser) (`roles/mcp.toolUser`) on the Google Cloud project. If you created a new project, then you already have the required permissions.
-3. Ensure your administrator has enabled the [BigQuery service](https://console.cloud.google.com/marketplace/product/google/bigquery.googleapis.com) on the Google Cloud project.
+3. Ensure your administrator has enabled the [BigQuery API](https://console.cloud.google.com/marketplace/product/google/bigquery.googleapis.com) on the Google Cloud project.
 
 ## Configure authentication
 
@@ -32,7 +32,7 @@ For additional details, see the [ADC documentation](https://docs.cloud.google.co
 To install the extension, run the following command in your terminal:
 
 ```bash
-gemini extensions link https://github.com/GoogleCloudPlatform/bigquery-remote-mcp
+gemini extensions install https://github.com/GoogleCloudPlatform/bigquery-remote-mcp
 ```
 
 ## Available tools
